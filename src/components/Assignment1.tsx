@@ -66,7 +66,6 @@ const Assignment1 = () => {
                 variant: "destructive"
             })
         }
-        console.log(error)
     } finally {
         setIsLoading(false)
     }
@@ -82,7 +81,7 @@ const Assignment1 = () => {
                     <div className="relative">
                         <Input 
                             placeholder="eg: Mumbai"
-                            className="w-[100px] lg:w-[300px] placeholder:text-slate-500"
+                            className="w-[200px] lg:w-[300px] placeholder:text-slate-500"
                             value={cityName}
                             onChange={(e) => setCityName(e.target.value)}
                         />

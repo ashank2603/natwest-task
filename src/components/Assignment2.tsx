@@ -16,8 +16,8 @@ const Assignment2 = () => {
 
   return (
     <div>
-        <h1 className="text-3xl font-semibold px-20">Assignment 2</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-20 py-5">
+        <h1 className="text-3xl font-semibold px-8 xl:px-20">Assignment 2</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-8 xl:px-20 py-5">
         {sortedStateData.map((item, index) => (
             <StateCard 
                 key={item.id}

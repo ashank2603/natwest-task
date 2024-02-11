@@ -24,8 +24,8 @@ const StateCardInfo: React.FC<StateCardInfoProps> = ({ state }) => {
 
   return (
     <div className="h-[800px] flex flex-col gap-10">
-      <div className="flex flex-col lg:flex-row h-[600px]">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="flex flex-col lg:flex-row gap-10">
+        <ResponsiveContainer className="bg-zinc-200 p-8 rounded-xl" width="100%" height={400}>
           <PieChart width={400} height={400}>
             <Legend name="cityName" />
             <Pie
@@ -33,8 +33,8 @@ const StateCardInfo: React.FC<StateCardInfoProps> = ({ state }) => {
               dataKey="population"
               cx="50%"
               cy="50%"
-              innerRadius={70}
-              outerRadius={90}
+              innerRadius={100}
+              outerRadius={120}
               fill="#82ca9d"
               nameKey="cityName"
             >
@@ -44,7 +44,7 @@ const StateCardInfo: React.FC<StateCardInfoProps> = ({ state }) => {
             </Pie>
           </PieChart>
         </ResponsiveContainer>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer className="bg-zinc-200 p-8 rounded-xl" width="100%" height={400}>
           <LineChart
             width={500}
             height={300}

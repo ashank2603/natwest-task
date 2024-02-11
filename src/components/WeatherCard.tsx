@@ -44,7 +44,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({
           <Loader className="animate-spin mt-40" />
         </div>
       ) : (
-        <div className="flex flex-col lg:flex-row justify-between gap-20 w-full px-8 py-10">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 xl:gap-20 w-full px-8 py-10">
           <div className="flex flex-col gap-4 py-5">
             <h1 className="text-lg font-semibold">
               City: <span className="font-normal">{cityWeatherData.name}</span>
@@ -89,7 +89,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({
             </h1>
           </div>
           <div className="h-[400px] w-full">
-            <h1 className="text-xl font-semibold ml-20 mb-2">Past Weather Data</h1>
+            <h1 className="text-xl font-semibold xl:ml-20 mb-2">Past Weather Data</h1>
             <ResponsiveContainer width="100%" height="100%">
               <LineChart
                 width={400}
